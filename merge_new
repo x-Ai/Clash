@@ -14,12 +14,6 @@ ruleset=🚀 节点选择,https://raw.githubusercontent.com/chinnsenn/ClashCusto
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/direct.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-ruleset=🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
-ruleset=🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
-ruleset=🆎 AdBlock,https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/ad.list
-ruleset=🛡️ 隐私防护,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
 ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
 ruleset=Ⓜ️ 微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
@@ -98,10 +92,6 @@ custom_proxy_group=🍠 小红书`select`[]DIRECT`[]REJECT`[]🚀 手动切换
 custom_proxy_group=🕺 字节跳动`select`[]DIRECT`[]REJECT`[]🚀 手动切换
 custom_proxy_group=🎮 Nintendo`select`[]🚀 节点选择`.*
 custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
-custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
-custom_proxy_group=🆎 AdBlock`select`[]REJECT`[]DIRECT
-custom_proxy_group=🛡️ 隐私防护`select`[]REJECT`[]DIRECT
 custom_proxy_group=🇬🇧 英国节点`select`(UK|英|伦敦)
 custom_proxy_group=🇩🇪 德国节点`select`(DE|德)
 custom_proxy_group=🇨🇦 加拿大节点`select`(CA|Canada|加拿大|枫)
@@ -132,7 +122,7 @@ enable_rule_generator=true
 overwrite_original_rules=true
 skip_failed_links=true
 
-exclude_remarks=(IPV6|重置|流量|用户|本站|漏洞|永久虚通路|车|邀|免翻|邀请|eevpn|域名|机场|刷新|到期|套餐|官网|更多|关注|25倍率|http|增加|持续|剩余|.*(x[3-9]\.[0-9])|(x[1-9][0-9])|(x[3-9]))
+exclude_remarks=(IPV6|重置|流量|用户|本站|漏洞|永久虚通路|车|邀|免翻|邀请|eevpn|域名|机场|刷新|到期|套餐|官网|更多|关注|25倍率|http|增加|持续|剩余|.*(x[3-9]\.[0-9])|(x[1-9][0-9])|(x[3-9])|.*(Traffic Reset：([0-9]+) Days Left)|.*(Expire Date：([0-9]{4}/[0-9]{2}/[0-9]{2})))
 
 rename=!!GROUP=milkcat!!^@MilkCat-
 rename=!!GROUP=eejsq!!^@Eejsq-

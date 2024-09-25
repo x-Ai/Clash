@@ -1,0 +1,33 @@
+# NAME: Home
+# AUTHOR: x-Ai
+# REPO: https://github.com/x-Ai/Clash
+
+# NAME: TextNow
+DOMAIN-SUFFIX,textnow.me
+DOMAIN-SUFFIX,textnow.com
+DOMAIN-SUFFIX,emb-api.com
+DOMAIN-SUFFIX,leanplum.com
+DOMAIN-SUFFIX,perimeterx.net
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,px-cloud.net
+
+# NAME: TextMe
+DOMAIN-SUFFIX,textme-app.com
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,batch.com
+DOMAIN-SUFFIX,textme-stickers.s3.amazonaws.com
+
+# NAME: Talkatone
+DOMAIN,xmpp4.tktn.be
+DOMAIN,xmpp3.tktn.be
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,tktn.at
+DOMAIN-SUFFIX,talkatone.com
+IP-CIDR,69.46.75.1/24
+IP-CIDR,205.164.56.1/24
+IP-CIDR,108.160.170.1/24
+IP-CIDR,173.255.209.1/24
+IP-CIDR,67.228.102.1/24
+IP-CIDR,202.160.129.1/24
+IP-CIDR,64.13.192.1/24
+DST-PORT,5222

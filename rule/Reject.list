@@ -1,0 +1,12 @@
+# NAME: Reject
+# AUTHOR: x-Ai
+# REPO: https://github.com/x-Ai/Clash
+
+# AD & Analyze
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.world
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,kochava.com
+DOMAIN-SUFFIX,agkn.com
+DOMAIN-SUFFIX,mobilefuse.com

@@ -31,3 +31,8 @@ DOMAIN,rp-static-apne1.s3.ap-northeast-1.amazonaws.com
 
 # Hushed
 DOMAIN-SUFFIX,hushed.com
+
+# PokePay
+DOMAIN-SUFFIX,pokepay.cc
+DOMAIN-SUFFIX,sumsub.com
+

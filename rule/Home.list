@@ -28,3 +28,6 @@ DST-PORT,5222
 DOMAIN-SUFFIX,redotpay.com
 DOMAIN,redotpay.zendesk.com
 DOMAIN,rp-static-apne1.s3.ap-northeast-1.amazonaws.com
+
+# Hushed
+DOMAIN-SUFFIX,hushed.com

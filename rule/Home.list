@@ -23,3 +23,8 @@ DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,tktn.at
 DOMAIN-SUFFIX,talkatone.com
 DST-PORT,5222
+
+# RedotPay
+DOMAIN-SUFFIX,redotpay.com
+DOMAIN,redotpay.zendesk.com
+DOMAIN,rp-static-apne1.s3.ap-northeast-1.amazonaws.com

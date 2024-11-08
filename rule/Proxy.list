@@ -15,3 +15,6 @@ DOMAIN-SUFFIX,stun.playstation.net
 
 # Clash
 DOMAIN-SUFFIX,naixisafe.com
+
+# ESET
+DOMAIN-SUFFIX,update.eset.com

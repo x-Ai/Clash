@@ -6,7 +6,8 @@
 DOMAIN-SUFFIX,jzieel.lol
 
 # ESET Internet Security
-DOMAIN-SUFFIX,eset.com
+DOMAIN,login.eset.com
+DOMAIN,home.eset.com
 
 # Localization
 DOMAIN-SUFFIX,restlbs.map.qq.com

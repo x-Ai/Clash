@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,px-cloud.net
 
 # NAME: TextMe
 DOMAIN-SUFFIX,textme-app.com
-DOMAIN-SUFFIX,mixpanel.com
+#DOMAIN-SUFFIX,mixpanel.com
 DOMAIN-SUFFIX,batch.com
 DOMAIN-SUFFIX,textme-stickers.s3.amazonaws.com
 

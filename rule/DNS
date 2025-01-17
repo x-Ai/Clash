@@ -1,0 +1,6 @@
+# NAME: DNS
+# AUTHOR: x-Ai
+# REPO: https://github.com/x-Ai/Clash
+
+IP-CIDR,1.1.1.1/32
+IP-CIDR,8.8.8.8/32

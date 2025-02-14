@@ -19,3 +19,6 @@ DOMAIN-SUFFIX,naixisafe.com
 # ESET Internet Security
 DOMAIN,update.eset.com
 DOMAIN,forum.eset.com
+
+# Microsoft Symbol Server
+DOMAIN,msdl.microsoft.com

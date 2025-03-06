@@ -22,3 +22,6 @@ DOMAIN,forum.eset.com
 
 # Microsoft Symbol Server
 DOMAIN,msdl.microsoft.com
+
+# Zig
+DOMAIN,ziglang.org

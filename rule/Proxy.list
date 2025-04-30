@@ -28,3 +28,6 @@ DOMAIN,ziglang.org
 
 # Rust
 DOMAIN,static.rust-lang.org
+
+# Golang
+DOMAIN-SUFFIX,golang.org

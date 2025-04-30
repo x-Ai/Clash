@@ -25,3 +25,6 @@ DOMAIN,msdl.microsoft.com
 
 # Zig
 DOMAIN,ziglang.org
+
+# Rust
+DOMAIN,static.rust-lang.org

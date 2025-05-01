@@ -4,3 +4,9 @@
 
 IP-CIDR,1.1.1.1/32
 IP-CIDR,8.8.8.8/32
+IP-CIDR,8.8.4.4/32
+IP-CIDR,45.90.28.186/32
+IP-CIDR,9.9.9.11/32
+DOMAIN,dns.google
+DOMAIN,dns.nextdns.io
+DOMAIN,dns11.quad9.net

@@ -30,5 +30,5 @@ DOMAIN,ziglang.org
 DOMAIN-SUFFIX,rust-lang.org
 
 # Golang
-#DOMAIN-SUFFIX,golang.org
+DOMAIN-SUFFIX,golang.org
 DOMAIN-SUFFIX,dl.google.com

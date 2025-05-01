@@ -27,7 +27,7 @@ DOMAIN,msdl.microsoft.com
 DOMAIN,ziglang.org
 
 # Rust
-DOMAIN-SUFFIX,static.rust-lang.org
+DOMAIN-SUFFIX,rust-lang.org
 
 # Golang
 #DOMAIN-SUFFIX,golang.org

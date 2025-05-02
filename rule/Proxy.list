@@ -38,3 +38,6 @@ DOMAIN,dl-cdn.alpinelinux.org
 
 # Docker
 DOMAIN,docker.io
+
+# Gitlab
+DOMAIN,observe.gitlab.com

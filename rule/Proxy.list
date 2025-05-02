@@ -35,3 +35,6 @@ DOMAIN-SUFFIX,dl.google.com
 
 # alpine
 DOMAIN,dl-cdn.alpinelinux.org
+
+# Docker
+DOMAIN,docker.io

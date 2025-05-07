@@ -2,7 +2,7 @@
 # AUTHOR: x-Ai
 # REPO: https://github.com/x-Ai/Clash
 
-# AD & Analyze
+# AD & Analyze & Tracking
 DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,adjust.world
 DOMAIN-SUFFIX,crashlytics.com
@@ -13,19 +13,70 @@ DOMAIN-SUFFIX,mobilefuse.com
 DOMAIN-SUFFIX,lenovomm.com
 DOMAIN-SUFFIX,mixpanel.com
 DOMAIN,gallup.eset.com
+DOMAIN,log-sdk.ksapisrv.com
+DOMAIN,csplog.kuaishou.com
 
-# PCDN
+# Tencent PCDN
 DOMAIN,tp2p.kg.qq.com
 DOMAIN,twns.p2ptun.qq.com
 DOMAIN,musicps.p2p.qq.com
 DOMAIN,musicpunch.p2p.qq.com
 
-# Tencent
-DOMAIN,logs.game.qq.com
-DOMAIN,intldlgs.qq.com
+# Tencent Tracking
 DOMAIN,aegis.qq.com
+DOMAIN,api.aisee.qq.com
+DOMAIN,appsupport.qq.com
+DOMAIN,aq.qq.com
+DOMAIN,btrace.video.qq.com
+DOMAIN,creport.start.qq.com
+DOMAIN,csplog.kuaishou.com
+DOMAIN,dmplog.qq.com
+DOMAIN,dp3.qq.com
+DOMAIN,fbih5report.3g.qq.com
+DOMAIN,h.trace.qq.com
+DOMAIN,hc.tdm.qq.com
+DOMAIN,horizon-assets.qq.com
+DOMAIN,insight.cloud.tencent.com
+DOMAIN,logs.game.qq.com
+DOMAIN,log-sdk.ksapisrv.com
+DOMAIN,otheve.beacon.qq.com
+DOMAIN,ping.cloud.tencent.com
+DOMAIN,pingfore.qq.com
+DOMAIN,pingtas.qq.com
+DOMAIN,pr.map.qq.com
+DOMAIN,report.qqweb.qq.com
+DOMAIN,report.url.cn
+DOMAIN,safebrowsing.urlsec.qq.com
+DOMAIN,sdi.3g.qq.com
+DOMAIN,sdi.m.qq.com
+DOMAIN,sensors.cloud.tencent.com
+DOMAIN,intldlgs.qq.com
 DOMAIN,tqos.anticheatexpert.com
+DOMAIN,report.url.cn
 
-# ByteDance
+# ByteDance Tracking
 DOMAIN,mon-va.byteoversea.com
 DOMAIN,sgali-mcs.byteoversea.com
+
+# JD Tracking
+DOMAIN,seq.jd.com
+DOMAIN,uranus.jd.com
+DOMAIN,jdqd.jd.com
+DOMAIN,jdqd.jd.com
+DOMAIN,sgm-m.jd.com
+DOMAIN,mercury.jd.com
+DOMAIN,ag.jd.com
+DOMAIN,uranus.jd.com
+DOMAIN,im-x.jd.com
+DOMAIN,sh.jd.com
+DOMAIN,knicks.jd.com
+DOMAIN,gia.jd.id
+DOMAIN,hawks.jd.com
+DOMAIN,gia.jd.com
+DOMAIN,iv.jd.com
+DOMAIN,wx-analysis.jdcloud.com
+DOMAIN,h5speed.m.jd.com
+DOMAIN,jdqd.jd.com
+DOMAIN,jra.jd.com
+DOMAIN,sgm-w.jd.com
+DOMAIN,sgm-m.jd.com

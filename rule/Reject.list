@@ -75,7 +75,7 @@ DOMAIN,hawks.jd.com
 DOMAIN,gia.jd.com
 DOMAIN,iv.jd.com
 DOMAIN,wx-analysis.jdcloud.com
-DOMAIN,h5speed.m.jd.com
+#DOMAIN,h5speed.m.jd.com
 DOMAIN,jdqd.jd.com
 DOMAIN,jra.jd.com
 DOMAIN,sgm-w.jd.com

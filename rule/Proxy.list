@@ -44,3 +44,6 @@ DOMAIN,gitlab.com
 
 # Ubuntu
 DOMAIN,archive.ubuntu.com
+
+# Trae
+DOMAIN,trae.ai

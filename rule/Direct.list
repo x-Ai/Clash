@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,eset.com
 
 # Localization
 DOMAIN-SUFFIX,restlbs.map.qq.com
+
+# rapiddns
+DOMAIN-SUFFIX,rapiddns.io

@@ -16,3 +16,6 @@ DOMAIN-SUFFIX,restlbs.map.qq.com
 
 # rapiddns
 DOMAIN-SUFFIX,rapiddns.io
+
+# LINUX DO
+DOMAIN-SUFFIX,linux.do

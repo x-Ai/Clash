@@ -181,8 +181,8 @@ const rules = [
     // "RULE-SET,AI,AI",
     // "RULE-SET,Crypto,Crypto",
     // "RULE-SET,EHentai,E-Hentai",
-    "GEOSITE,PIKPAK,PikPak",
-    "GEOSITE,BILIBILI,Bilibili",
+    // "GEOSITE,PIKPAK,PikPak",
+    // "GEOSITE,BILIBILI,Bilibili",
 
     // GFW 规则
     "GEOSITE,GFW,选择节点",
@@ -746,24 +746,6 @@ function buildProxyGroups({
             "proxies": defaultProxies
         },
         {
-            "name": "E-Hentai",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Ehentai.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
-            "name": "PikPak",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/PikPak.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
-            "name": "Truth Social",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/TruthSocial.png",
-            "type": "select",
-            "proxies": (hasUS) ? ["美国节点", "选择节点", "手动选择"] : defaultProxies
-        },
-        {
             "name": "Bahamut",
             "icon": "https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png",
             "type": "select",
@@ -806,24 +788,10 @@ function buildProxyGroups({
             "proxies": defaultProxies
         },
         {
-            "name": "Crypto",
-            "icon": "https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
             "name": "SSH(22端口)",
             "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png",
             "type": "select",
             "proxies": defaultProxies
-        },
-        {
-            "name": "搜狗输入法",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Sougou.png",
-            "type": "select",
-            "proxies": [
-                "直连", "REJECT"
-            ]
         },
         {
             "name": "直连",
@@ -831,14 +799,6 @@ function buildProxyGroups({
             "type": "select",
             "proxies": [
                 "DIRECT", "选择节点"
-            ]
-        },
-        {
-            "name": "广告拦截",
-            "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png",
-            "type": "select",
-            "proxies": [
-                "REJECT", "直连"
             ]
         },
         {
@@ -875,21 +835,21 @@ function main(config) {
     } = buildBaseLists({ landing, lowCost, countryInfo });
 
     // 为地区构建对应的 url-test / load-balance 组
-    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n.replace(/节点$/, '')));
+    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n。replace(/节点$/， '')));
 
     // 生成代理组
     const proxyGroups = buildProxyGroups({
-        countryList: targetCountryList.map(n => n.replace(/节点$/, '')),
+        countryList: targetCountryList.map(n => n.替换(/节点$/， ''))，
         countryProxyGroups,
-        lowCost,
-        defaultProxies,
+        lowCost，
+        defaultProxies，
         defaultProxiesDirect,
         defaultSelector,
         defaultFallback
     });
     const globalProxies = proxyGroups.map(item => item.name);
     
-    proxyGroups.push(
+    proxyGroups。push(
         {
             "name": "GLOBAL",
             "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png",
@@ -901,13 +861,13 @@ function main(config) {
 
     if (fullConfig) Object.assign(config, {
         "mixed-port": 7890,
-        "redir-port": 7892,
+        "redir-port": 7892，
         "tproxy-port": 7893,
         "routing-mark": 7894,
         "allow-lan": true,
         "ipv6": ipv6Enabled,
         "mode": "rule",
-        "unified-delay": true,
+        "unified-delay": true，
         "tcp-concurrent": true,
         "find-process-mode": "off",
         "log-level": "info",

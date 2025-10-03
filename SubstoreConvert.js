@@ -182,7 +182,7 @@ const rules = [
     // "RULE-SET,Crypto,Crypto",
     // "RULE-SET,EHentai,E-Hentai",
     // "GEOSITE,PIKPAK,PikPak",
-    // "GEOSITE,BILIBILI,Bilibili",
+    "GEOSITE,BILIBILI,Bilibili",
 
     // GFW 规则
     "GEOSITE,GFW,选择节点",

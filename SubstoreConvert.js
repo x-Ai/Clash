@@ -832,16 +832,16 @@ function main(config) {
         defaultSelector,
         defaultFallback,
         countryGroupNames: targetCountryList
-    } = buildBaseLists({ landing， lowCost， countryInfo });
+    } = buildBaseLists({ landing, lowCost, countryInfo });
 
     // 为地区构建对应的 url-test / load-balance 组
-    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n。replace(/节点$/， '')));
+    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n.replace(/节点$/, '')));
 
     // 生成代理组
     const proxyGroups = buildProxyGroups({
         countryList: targetCountryList.map(n => n.replace(/节点$/, '')),
-        countryProxyGroups，
-        lowCost，
+        countryProxyGroups,
+        lowCost,
         defaultProxies,
         defaultProxiesDirect,
         defaultSelector,
@@ -860,20 +860,20 @@ function main(config) {
     );
 
     if (fullConfig) Object.assign(config, {
-        "mixed-port": 7890，
+        "mixed-port": 7890,
         "redir-port": 7892,
         "tproxy-port": 7893,
         "routing-mark": 7894,
         "allow-lan": true,
         "ipv6": ipv6Enabled,
-        "mode": "rule"，
+        "mode": "rule",
         "unified-delay": true,
         "tcp-concurrent": true,
         "find-process-mode": "off",
         "log-level": "info",
         "geodata-loader": "standard",
         "external-controller": ":9999",
-        "disable-keep-alive": !keepAliveEnabled，
+        "disable-keep-alive": !keepAliveEnabled,
         "profile": {
             "store-selected": true,
         }

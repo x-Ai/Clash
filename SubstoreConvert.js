@@ -129,7 +129,7 @@ const rules = [
     // 基础规则 - 直连优先
     "GEOSITE,PRIVATE,直连",
     "GEOIP,PRIVATE,直连,no-resolve",
-    "GEOSITE,GOOGLE-CN,直连",
+    "GEOSITE,google-cn,直连",
     "GEOSITE,STEAM@CN,直连",
     // "RULE-SET,SteamFix,直连",  // 已注释 - ruleProviders 已禁用
     "GEOSITE,CATEGORY-GAMES@CN,直连",

@@ -443,7 +443,7 @@ const countriesMeta = {
     "尼日利亚": {
         pattern: "(?i)尼日利亚|NG|Nigeria|🇳🇬",
         icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Nigeria.png"
-    },
+    }
 };
 
 function parseBool(value) {

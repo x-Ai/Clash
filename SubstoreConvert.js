@@ -181,7 +181,7 @@ const rules = [
     // "RULE-SET,AI,AI",
     // "RULE-SET,Crypto,Crypto",
     // "RULE-SET,EHentai,E-Hentai",
-    "GEOSITE,PIKPAK,PikPak",
+    // "GEOSITE,PIKPAK,PikPak",
     "GEOSITE,BILIBILI,Bilibili",
 
     // GFW 规则
@@ -208,13 +208,13 @@ const rules = [
 const snifferConfig = {
     "sniff": {
         "TLS": {
-            "ports": [443, 8443],
+            "ports": [443, 8443]
         },
         "HTTP": {
-            "ports": [80, 8080, 8880],
+            "ports": [80, 8080, 8880]
         },
         "QUIC": {
-            "ports": [443, 8443],
+            "ports": [443, 8443]
         }
     },
     "override-destination": false,
@@ -234,13 +234,13 @@ const dnsConfig = {
     "enhanced-mode": "redir-host",
     "default-nameserver": [
         "119.29.29.29",
-        "223.5.5.5",
+        "223.5.5.5"
     ],
     "nameserver": [
         "system",
         "223.5.5.5",
         "119.29.29.29",
-        "180.184.1.1",
+        "180.184.1.1"
     ],
     "fallback": [
         "quic://dns0.eu",
@@ -251,7 +251,7 @@ const dnsConfig = {
     ],
     "proxy-server-nameserver": [
         "quic://223.5.5.5",
-        "tls://dot.pub",
+        "tls://dot.pub"
     ]
 };
 
@@ -274,13 +274,13 @@ const dnsConfig2 = {
     ],
     "default-nameserver": [
         "119.29.29.29",
-        "223.5.5.5",
+        "223.5.5.5"
     ],
     "nameserver": [
         "system",
         "223.5.5.5",
         "119.29.29.29",
-        "180.184.1.1",
+        "180.184.1.1"
     ],
     "fallback": [
         "quic://dns0.eu",
@@ -291,7 +291,7 @@ const dnsConfig2 = {
     ],
     "proxy-server-nameserver": [
         "quic://223.5.5.5",
-        "tls://dot.pub",
+        "tls://dot.pub"
     ]
 };
 
@@ -443,7 +443,7 @@ const countriesMeta = {
     "尼日利亚": {
         pattern: "(?i)尼日利亚|NG|Nigeria|🇳🇬",
         icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Nigeria.png"
-    },
+    }
 };
 
 function parseBool(value) {
@@ -746,24 +746,6 @@ function buildProxyGroups({
             "proxies": defaultProxies
         },
         {
-            "name": "E-Hentai",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Ehentai.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
-            "name": "PikPak",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/PikPak.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
-            "name": "Truth Social",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/TruthSocial.png",
-            "type": "select",
-            "proxies": (hasUS) ? ["美国节点", "选择节点", "手动选择"] : defaultProxies
-        },
-        {
             "name": "Bahamut",
             "icon": "https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png",
             "type": "select",
@@ -806,24 +788,10 @@ function buildProxyGroups({
             "proxies": defaultProxies
         },
         {
-            "name": "Crypto",
-            "icon": "https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png",
-            "type": "select",
-            "proxies": defaultProxies
-        },
-        {
             "name": "SSH(22端口)",
             "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png",
             "type": "select",
             "proxies": defaultProxies
-        },
-        {
-            "name": "搜狗输入法",
-            "icon": "https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Sougou.png",
-            "type": "select",
-            "proxies": [
-                "直连", "REJECT"
-            ]
         },
         {
             "name": "直连",
@@ -831,14 +799,6 @@ function buildProxyGroups({
             "type": "select",
             "proxies": [
                 "DIRECT", "选择节点"
-            ]
-        },
-        {
-            "name": "广告拦截",
-            "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png",
-            "type": "select",
-            "proxies": [
-                "REJECT", "直连"
             ]
         },
         {
@@ -872,27 +832,27 @@ function main(config) {
         defaultSelector,
         defaultFallback,
         countryGroupNames: targetCountryList
-    } = buildBaseLists({ landing, lowCost, countryInfo });
+    } = buildBaseLists({ landing， lowCost， countryInfo });
 
     // 为地区构建对应的 url-test / load-balance 组
-    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n.replace(/节点$/, '')));
+    const countryProxyGroups = buildCountryProxyGroups(targetCountryList.map(n => n。replace(/节点$/， '')));
 
     // 生成代理组
     const proxyGroups = buildProxyGroups({
-        countryList: targetCountryList.map(n => n.替换(/节点$/， '')),
+        countryList: targetCountryList.map(n => n.replace(/节点$/, '')),
         countryProxyGroups，
         lowCost，
-        defaultProxies，
-        defaultProxiesDirect，
+        defaultProxies,
+        defaultProxiesDirect,
         defaultSelector,
         defaultFallback
     });
-    const globalProxies = proxyGroups。map(item => item。name);
+    const globalProxies = proxyGroups.map(item => item.name);
     
     proxyGroups.push(
         {
             "name": "GLOBAL",
-            "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png"，
+            "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png",
             "include-all": true,
             "type": "select",
             "proxies": globalProxies
@@ -905,15 +865,15 @@ function main(config) {
         "tproxy-port": 7893,
         "routing-mark": 7894,
         "allow-lan": true,
-        "ipv6": ipv6Enabled，
-        "mode": "rule",
+        "ipv6": ipv6Enabled,
+        "mode": "rule"，
         "unified-delay": true,
         "tcp-concurrent": true,
         "find-process-mode": "off",
         "log-level": "info",
-        "geodata-loader": "standard"，
+        "geodata-loader": "standard",
         "external-controller": ":9999",
-        "disable-keep-alive": !keepAliveEnabled,
+        "disable-keep-alive": !keepAliveEnabled，
         "profile": {
             "store-selected": true,
         }
@@ -922,7 +882,7 @@ function main(config) {
     Object.assign(config, {
         "proxy-groups": proxyGroups,
         // "rule-providers": ruleProviders,  // 已注释 - ruleProviders 已禁用
-        "rules": rules，
+        "rules": rules,
         "sniffer": snifferConfig,
         "dns": fakeIPEnabled ? dnsConfig2 : dnsConfig,
         "geodata-mode": true,
